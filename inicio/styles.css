@@ -1,0 +1,592 @@
+body {
+  color: #ffffff;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background: #131313;
+  padding: 0px;
+  margin: 0px;
+}
+
+scroll-container {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: #ff6600;
+  color: white;
+  text-shadow: 0 20px 20px #000000;
+}
+
+header {
+  padding-top: 10px;
+  background: #111;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(black, #070707);
+  height: fit-content;
+  box-shadow: 0 20px 20px #0000007d;
+}
+
+.header2 .header .titulo{
+  margin: 20px 0;
+}
+
+nav a {
+  color: white;
+  margin-left: 1.5rem;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.hero {
+  background: url('https://rymportatiles.com.pe/cdn/shop/files/audifonos-inalambricos-banner.jpg?v=1715752857&width=1400') no-repeat;
+  background-size: cover;
+  width: 80%;
+  color: white;
+  text-align: center;
+}
+
+.header {
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.4vw;
+  height: fit-content;
+  padding: 5px;
+}
+
+.titulo {
+  color: #fff;
+  font-size: 3em;
+  margin: auto 1em;
+  text-shadow: 0px 0px 20px #ffffff45;
+  transition: 0.6s ease-out;
+}
+
+.titulo:hover {
+  font-size: 3.1em;
+  cursor: pointer;
+  text-shadow: 0px 0px 10px #ffffffc3;
+}
+
+.primer_navegacion {
+  flex-grow: 1;
+  flex-basis: auto;
+  display: flex;
+  padding: 2vw;
+  background-color: #000000;
+  border-radius: 1vw;
+  height: fit-content;
+  width: fit-content;
+  justify-content: end;
+}
+
+@media (width <= 500px) {
+  .primer_navegacion {
+    width: 100%;
+    text-shadow: 0px 0px 10px #ffffffc3;
+  }
+
+  .primer_navegacion a {
+    margin: auto;
+    font-size: 3.5vw;
+    background-color: #101010;
+    box-shadow: 0 0 1.3rem #ffffff3a;
+  }
+
+  .primer_navegacion a:hover {
+    font-size: 4vw;
+  }
+}
+
+@media (width <= 803px) {
+  .primer_navegacion {
+    width: 100%;
+  }
+
+  .primer_navegacion a {
+    margin: auto;
+  }
+}
+
+@media (width <= 446px) {
+  .primer_navegacion {
+    margin: 10px 0px;
+  }
+
+}
+
+.navegacion_btn {
+  margin-inline: 5px;
+  width: fit-content;
+  display: inline-flex;
+  height: fit-content;
+  background-color: #080808;
+  padding: 1em;
+  border: 0.2vw solid #ffffff03;
+  border-radius: 1em;
+  font-size: clamp(14px, 4vw + 1rem, 0.5vw);
+  transition: 0.3s ease;
+}
+
+.navegacion_btn:hover {
+  font-size: clamp(14px, 4vw + 1rem, 2.5vw);
+  font-size: 1.5vw;
+  background-color: #ff6600;
+  box-shadow:  0 0 30px #ff66005e;
+}
+
+.sonido_premium {
+  padding: 1em 0.2em;
+  font-size: 3em;
+  border-radius: 2vw;
+}
+
+.audio_profesional {
+  font-size: 2em;
+  text-shadow: 3px 4px 10px #000000c3;
+}
+
+.btn {
+  margin: auto;
+  border-radius: 0.7rem;
+  padding: 15px 30px;
+  font-size: 1.5em;
+  color: #fff;
+  text-decoration: none;
+  overflow: hidden;
+  background: linear-gradient(45deg, #ff0057, #e64a19, #fbc02d, #00bcd4, #8bc34a, #ff0057);
+  background-size: 600%;
+  cursor: pointer;
+  transition: background-position 0.5s;
+  transition: font-size 0.3s;
+  margin-inline: 10px;
+}
+
+.btn:hover {
+  font-size: 2em;
+  animation: animateBackground 15s linear infinite;
+  box-shadow: 0px 0px 20px #ff0051;
+}
+
+#comprarboton {
+  margin: 15px auto;
+}
+
+@keyframes animateBackground {
+  0% { background-position: 0% 50%; }
+  100% { background-position: -600% 50%; }
+}
+
+section {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.features {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  width: 80%;
+}
+
+section h2 {
+  font-size: 2em;
+  border-radius: 10px;
+  padding: 15px 15px;
+  backdrop-filter: blur(1rem);
+  background-color: #ffffff05;
+  box-shadow: 10px 15px 20px #0000003f;
+}
+
+.features2{
+  color: white;
+  text-decoration: none;
+  overflow: hidden;
+  background: linear-gradient(45deg, #1b1b1b, #1b1b1b,#434343, #252525, #4b4b4b, #1a1a1a, #505050, #1b1b1b, #1b1b1b);
+  animation: animateBackground 25s linear reverse infinite;
+  background-size: 600%;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 35px #ffffff40;
+  text-align: center;
+  transition: .3s ease-in-out;
+}
+
+.features2:hover {
+  overflow: hidden;
+  background: linear-gradient(45deg, #4c00ff, #4c00ff,#00bcd4, rgb(132, 0, 255), #00bcd4, #ffe138, #1931e6, #fb2dfb, #00bcd4, #ffe138, #4c00ff, #4c00ff);
+  background-size: 600%;
+  animation: animateBackground 15s linear reverse infinite;
+
+  background-color: #5492df;
+  box-shadow: 0 0 40px #60a7ff;
+}
+
+#paginaoficial {
+  display: inline-flex;
+  margin: auto;
+  margin-inline: 20px;
+  width: fit-content;
+  font-size: 1.5rem;
+  transition: .3s ease-in-out;
+  box-shadow: 0 0 15px #ffffff6b;
+  padding: 20px 35px;
+}
+
+#paginaoficial:hover {
+  font-size: 2rem;
+  box-shadow: 0 0 40px #60a7ff;
+}
+
+#apple {
+  font-size: 1rem;
+  width: 90%;
+  margin: auto;
+  padding: 2rem;
+  display: flex;
+}
+
+#apple a {
+  font-size: 1.5rem;
+  display: flex;
+  margin: auto;
+  height: fit-content;
+  margin-inline: 10px;
+}
+
+.caracteristicas {
+  font-size: 20px;
+}
+
+.testimonials {
+  width: 80%;
+  background: linear-gradient(125deg, #3e3e3e, #212121 23%, #150d1a, #422950, #2b182b, #300b0b);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 20px 20px #00000052;
+  transition: .5s ease;
+  margin: auto;
+}
+
+.testimonials:hover {
+  box-shadow: 0 0px 20px #ffffff3f;
+}
+
+.testimonials p {
+  font-size: 1.5em;
+}
+
+footer {
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.gallery section {
+  display: flex;
+  width: 90%;
+  height: 60vh;
+  margin: auto;
+}
+
+.gallery section img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .8;
+  transition: .5s ease;
+  box-shadow: 0px 0px 20px #ffffffc3;
+}
+
+.gallery section img:hover {
+  cursor: crosshair;
+  width: 300px;
+  height: 60vh;
+  opacity: 1;
+  filter: contrast(120%);
+  box-shadow: 0px 0px 40px #ffffffc3;
+}
+
+#comprar div {
+  height: fit-content;
+}
+
+#comprar {
+  background-image: url(https://i0.wp.com/9to5mac.com/wp-content/uploads/sites/6/2020/12/AirPods-Max-black.jpg?w=1500&quality=82&strip=all&ssl=1);
+  margin: 5vh auto;
+  background-size: cover;
+  height: 400px;
+  border-radius: 2em;
+  box-shadow: 15px 30px 35px #000000b1;
+  width: 80%;
+}
+
+#comprar h2 {
+  width: fit-content;
+  display: flex;
+  font-size: 4vh;
+  box-shadow: 0 0 20px #ffffff19;
+  transition: .3s ease-out;
+}
+
+#comprar h2:hover {
+  box-shadow: 0 0 20px #ffffff2d;
+  cursor: none;
+}
+
+#paypal {
+  margin-top: 40px;
+  width: fit-content;
+  display: flex;
+}
+
+
+#contacto a {
+  transition: .2s ease;
+  margin-inline: 10px;
+}
+
+#contacto a:hover {
+  color: #ff6600;
+  text-shadow: 0 0 20px #ffffffb3;
+}
+
+#politicas {
+  display: flex;
+  margin: 20px auto;
+  width: fit-content;
+}
+
+
+
+.fondo2 {
+  background: linear-gradient(90deg, #1b2631 ,#344b4d, #1b2631, #344b4d, #1b2631);
+  background-size: 1000%;
+  width: 99.8%;
+  margin: 0 auto;
+}
+
+.agradecimiento{
+  font-size: 3em;
+  box-shadow: 0 15px 30px #00e1ff77;
+  transition: .2s ease-out;
+}
+
+.agradecimiento:hover {
+  box-shadow: 0 15px 30px #00ff8477;
+}
+
+.formulario {
+  width: 70vw;
+  display: block;
+  margin: 350px 50%;
+  position: sticky;
+  transform: translate(-50%, -50%);
+  height: fit-content;
+  background-color: #0b0b0b51;
+  border-radius: 10px;
+  padding: 10px;
+  padding-bottom: 50px;
+}
+
+.formulario h1 {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #ffffff;
+  font-size: 3em;
+}
+
+.formulario form {
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+form .username {
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 30px 0;
+  color: white;
+}
+
+.username input {
+  width: 100%;
+  padding: 0 5px;
+  margin: 10px;
+  height: 40px;
+  font-size: 1.5em;
+  border: none;
+  background: none;
+  outline: none;
+  color: white;
+}
+
+.username label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color:  #adadad;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+  pointer-events: none;
+  transition: .3s;
+}
+
+.username span::before {
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: rgb(255, 0, 0);
+}
+
+.username input:focus ~ label,
+.username input:focus ~ label{
+  top: -5px;
+  color: #ffffff00;
+}
+
+.username input:focus ~ span::before,
+.username input:focus ~ span::before{
+  width: 100%;
+}
+
+#contacto {
+  margin-top: 40px;
+  background: linear-gradient(#0a0a0a, #1a1a1a);
+  border-top: 2px solid rgb(93, 93, 93);
+}
+
+#enviar_cancelar {
+  border-radius: 1em;
+  padding: 10px;
+  margin: auto;
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.enviar {
+  content: none;
+}
+
+.cancelar {
+  left: 70%;  
+}
+
+
+
+.centro {
+  margin: 5% auto;
+  border-radius: 1.5em;
+  width: 70vw;
+  height: fit-content;
+  padding: 20px;
+  background: linear-gradient(90deg, #6e001d, #190094, #68005e, #6e001d, #190094, #68005e, #6e001d);
+  animation: animateBackground 30s linear infinite;
+  background-size: 1000%;
+  backdrop-filter: blur(400px);
+  box-shadow: 10px 10px 50px black;
+  transition: .3s ease;
+}
+
+.centro:hover {
+  box-shadow: 0 0 50px #ff008c;
+}
+
+.centro h1 {
+  display: flex;
+  margin: .5em auto;
+  padding: 20px;
+  font-size: 3rem;
+  height: fit-content;
+  border-radius: .5em;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000ea;
+  backdrop-filter: invert(100%);
+  box-shadow: 7px 12px 20px black;
+  transition: .2s ease-out;
+}
+
+.centro h1:hover {
+  box-shadow: 0 0 20px #0091ff;
+}
+
+.body-gracias {
+  background-color: white;
+}
+
+.parrafo {
+  margin-top: 50px;
+  font-size: 1rem;
+  background-color: #ffffff16;
+  padding: 1rem;
+  border-radius: 1.5rem;
+}
+
+.container_feat {
+  display: flexbox;
+  height: fit-content;
+  margin: 1em;
+  padding: 1em;
+  border-radius: 1em;
+  backdrop-filter: blur 50px;
+}
+
+.container_feat h3 {
+  max-width: 80%;
+  display: block;
+  padding: 15px;
+  background: linear-gradient(150deg, #0000007e, #07070700 50%);
+  border-radius: .7em;
+  transition: .2s ease;
+}
+
+.container_feat h3:hover {
+  box-shadow: -6px -6px 10px #ad003a;
+}
+
+#volver {
+  display: flex;
+  width: fit-content;
+  margin: 40px auto;
+  border-radius: 1em;
+}
+
+#mangus {
+  display: flex;
+  width: 80vw;
+  margin: auto;
+}
+
+#mogus_container {
+  height: 99vh;
+  align-content: center;
+}
+
+#comprar div {
+  display: block;
+  height: fit-content;
+  width: fit-content;
+}
+
+#diagramapple {
+  display: flex;
+  margin-top: 20px;
+}
